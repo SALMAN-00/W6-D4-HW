@@ -22,14 +22,25 @@ a {
   color: white;
   text-decoration: none;
 }
+
 main {
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.img {
+  height: 400px;
+  text-align: center;
+  color: white;
+  background-image: url("https://media.istockphoto.com/id/1573329496/photo/multi-layers-color-texture-3d-papercut-layers-in-gradient-vector-banner-carving-art-cover.jpg?s=1024x1024&w=is&k=20&c=EmGEp2Z1LJmjaxofvy_hxMgyIe0t_39Ophh-CG74_Vc=");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.text-loren {
+  margin-bottom: 50px;
+}
 #container {
   text-align: center;
 }
