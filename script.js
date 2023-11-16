@@ -48,7 +48,11 @@ buttonSignup.addEventListener("click", () => {
 
     fetch("https://655273ad5c69a779032a0b90.mockapi.io/SignUp", {
       method: "POST",
-      body: JSON.stringify({ userSignup }),
+      body: JSON.stringify({
+        username: usernameSignup.value,
+        email: emailSignup.value,
+        password: passwordSignup.value,
+      }),
       headers: { "Content-type": "application/json; charset=UTF-8" },
     })
       .then(response => response.json())

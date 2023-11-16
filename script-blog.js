@@ -4,11 +4,11 @@ let blog = document.getElementById("blog");
 let btn = document.getElementById("btn");
 let clearBtn = document.getElementById("clear-button");
 let userEmail = document.getElementById("username");
-
-let storedUserEmail = localStorage.getItem("User");
-
-if (storedUserEmail !== null && storedUserEmail !== undefined) {
-  userEmail.innerHTML = storedUserEmail;
+let logout = document.getElementById("logout");
+let storedUserEmailLogin = localStorage.getItem("User");
+let storedUserEmailLogout = localStorage.removeItem("User");
+if (storedUserEmailLogin !== null && storedUserEmailLogin !== undefined) {
+  userEmail.innerHTML = storedUserEmailLogin;
 } else {
   userEmail.innerHTML = "Gest";
 }
@@ -19,4 +19,8 @@ btn.addEventListener("click", () => {
 
 clearBtn.addEventListener("click", () => {
   blog.innerHTML = "";
+});
+
+logout.addEventListener("clic", () => {
+  storedUserEmailLogout;
 });

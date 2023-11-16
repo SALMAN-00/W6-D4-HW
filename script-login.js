@@ -21,6 +21,7 @@ buttonLogin.addEventListener("click", () => {
           localStorage.setItem("User", userValid.email);
           window.location.href = "blog.html";
         }
-      });
+      })
+      .catch(e => console.log(e));
   }
 });
